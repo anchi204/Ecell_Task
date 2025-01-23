@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">E-Cell</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Grid</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="2.html">Next</a></li>
+        </ul>
+        <div class="menu-toggle">☰</div>
+    </nav>
+
+    <div class="main-container">
+        <div class="box gradient-box"></div>
+        <div class="box logo-box">
+            <img src="https://e-cellmnnit.netlify.app/static/media/logo1.aa59d10dce000c1b6a45.png" alt="Logo">
+        </div>
+        <div class="box grid-box">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="highlight"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbarMenu = document.querySelector('.navbar ul');
+
+        menuToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
